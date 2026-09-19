@@ -26,12 +26,12 @@ const PopularFoods = () => {
                 <Card.Body className="d-flex flex-column justify-content-between p-3">
                   <div>
                     <Card.Title className="fw-bold fs-6 mb-1">{food.name}</Card.Title>
-                    <Card.Text className="text-muted small mb-3">{food.vendor}</Card.Text>
+                    <Card.Text className="text-muted text-sm mb-3">{food.vendor}</Card.Text>
                   </div>
-                  <div className="d-flex justify-content-between align-items-center border-top pt-3 mt-1 food-footer">
-                    <div className="fw-bold fs-5 food-price">₹{food.price}</div>
-                    <Button variant="outline-success" size="sm" className="rounded-pill px-3 py-1 fw-bold shadow-sm w-auto food-add-btn">
-                      ADD <span className="food-add-icon">+</span>
+                  <div className="d-flex justify-content-end align-items-center border-top pt-3 mt-1 gap-4 food-footer">
+                    <div className="fw-bold fs-5 food-price mb-0">₹{food.price}</div>
+                    <Button variant="success" className="btn-success rounded-pill px-4 py-2 fw-bold shadow-sm food-add-btn">
+                      ADD
                     </Button>
                   </div>
                 </Card.Body>

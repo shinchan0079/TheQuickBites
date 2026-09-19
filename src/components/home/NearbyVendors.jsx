@@ -31,14 +31,14 @@ const NearbyVendors = () => {
                 </div>
                 <Card.Body className="p-3">
                   <Card.Title className="fw-bold fs-6 mb-2 text-truncate vendor-card-title">{vendor.name}</Card.Title>
-                  <div className="d-flex gap-2 text-muted small mb-2 flex-wrap">
+                  <div className="d-flex gap-2 text-muted text-sm mb-2 flex-wrap">
                     <span className="fw-bold text-white bg-success px-2 py-1 rounded d-flex align-items-center gap-1 vendor-rating-badge">
                       <FiStar size={10} /> {vendor.rating}
                     </span>
                     <span className="d-flex align-items-center gap-1"><FiMapPin size={12} /> {vendor.distance}</span>
                     <span className="d-flex align-items-center gap-1"><FiClock size={12} /> {vendor.time}</span>
                   </div>
-                  <Card.Text className="text-muted small border-top pt-2 mt-1 mb-0 vendor-tags">
+                  <Card.Text className="text-muted text-sm border-top pt-2 mt-1 mb-0 vendor-tags">
                     {vendor.tags}
                   </Card.Text>
                 </Card.Body>

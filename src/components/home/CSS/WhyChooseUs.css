@@ -2,7 +2,7 @@
   color: var(--primary-dark);
 }
 .why-card {
-  border-radius: 1rem;
+  border-radius: var(--radius-lg);
   background-color: var(--bg-offwhite);
 }
 .why-icon-wrapper {

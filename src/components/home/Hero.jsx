@@ -14,7 +14,7 @@ const Hero = () => {
           <Col lg={6} className="mb-5 mb-lg-0 pe-lg-5">
             <div className="hero-location-badge d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill mb-4 shadow-sm">
               <FiMapPin color="var(--primary-orange)" />
-              <span className="small fw-semibold text-dark">Delivering to your Address</span>
+              <span className="text-sm fw-semibold text-dark">Delivering to your Address</span>
             </div>
 
             <h1 className="hero-title display-5 fw-bold lh-sm mb-3">
@@ -27,15 +27,15 @@ const Hero = () => {
               <span className="small">Order fresh and tasty food from your favourite local stalls. Real taste, superfast delivery.</span>
             </p>
 
-            <div className="hero-search-wrapper d-flex bg-white rounded-pill shadow-sm mb-4 border p-1 align-items-center">
-              <div className="ps-3 d-flex align-items-center">
+            <div className="hero-search-wrapper d-flex bg-white rounded-pill shadow-sm mb-4 border p-0 align-items-center overflow-hidden">
+              <div className="ps-4 d-flex align-items-center">
                 <FiSearch color="var(--primary-dark)" size={18} />
               </div>
               <Form.Control
                 placeholder="Search for chaat, momos or stalls..."
                 className="hero-search-input border-0 shadow-none bg-transparent"
               />
-              <Button className="hero-search-btn rounded-pill px-4 fw-bold">
+              <Button style={{ borderRadius: '0 var(--radius-full) var(--radius-full) 0', width: 'auto' }} className="hero-search-btn btn-primary px-4 py-3 fw-bold h-100 m-0">
                 Search
               </Button>
             </div>
@@ -55,7 +55,10 @@ const Hero = () => {
               </div>
               
               {/* Floating Badge */}
-              <div className="hero-floating-badge position-absolute shadow-lg bg-white p-3 rounded-4">
+              <div 
+                className="hero-floating-badge position-absolute shadow-lg bg-white p-3 rounded-4"
+                style={{ bottom: 0, left: 0, transform: 'translate(-10%, 15%)' }}
+              >
                 <div className="hero-lightning-icon">⚡</div>
                 <div>
                   <div className="hero-superfast-text fw-bold">Superfast</div>

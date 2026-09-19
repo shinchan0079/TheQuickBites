@@ -13,7 +13,7 @@ const OfferBanner = () => {
                 <Row className="align-items-center h-100">
                   <Col xs={7} md={8}>
                     <h2 className="fw-bold mb-1 offer-title">Flat 20% OFF</h2>
-                    <h5 className="mb-3">On Your First Order</h5>
+                    <h3 className="mb-3 fs-5">On Your First Order</h3>
                     <div className="d-inline-block px-3 py-1 bg-white text-dark rounded-pill fw-bold mb-3 small offer-code-badge">
                       Code: TQB20
                     </div>
@@ -34,7 +34,7 @@ const OfferBanner = () => {
                 <Row className="align-items-center h-100">
                   <Col xs={7} md={8}>
                     <h2 className="fw-bold mb-1 offer-title">Free Delivery</h2>
-                    <h5 className="mb-3">On Orders Above ₹149</h5>
+                    <h3 className="mb-3 fs-5">On Orders Above ₹149</h3>
                     <div className="d-inline-block px-3 py-1 bg-white text-dark rounded-pill fw-bold mb-3 small offer-code-badge secondary">
                       Code: FREEDEL
                     </div>
@@ -43,7 +43,7 @@ const OfferBanner = () => {
                     </div>
                   </Col>
                   <Col xs={5} md={4} className="text-center offer-img-wrapper">
-                    <img src="/cat_burger.jpg" alt="Free Delivery Offer" className="offer-img" />
+                    <img src="/hero-food.jpg" alt="Free Delivery Offer" className="offer-img" />
                   </Col>
                 </Row>
               </Card.Body>

@@ -12,7 +12,7 @@
 }
 
 .vendor-card {
-  border-radius: 1rem;
+  border-radius: var(--radius-lg);
   cursor: pointer;
   overflow: hidden;
 }

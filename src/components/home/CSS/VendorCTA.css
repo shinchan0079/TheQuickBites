@@ -1,6 +1,6 @@
 .vendor-cta-card {
   background-color: var(--bg-offwhite);
-  border-radius: 1.5rem;
+  border-radius: var(--radius-xl);
 }
 .vendor-cta-title {
   color: var(--primary-dark);

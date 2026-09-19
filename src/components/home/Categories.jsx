@@ -9,7 +9,7 @@ const Categories = () => {
   return (
     <section className="py-5 bg-white">
       <Container>
-        <h3 className="fw-bold mb-4 categories-section-title">What's on your mind?</h3>
+        <h2 className="fw-bold mb-4 categories-section-title">What's on your mind?</h2>
         <Row className="g-4 text-center">
           {categories.map((cat) => (
             <Col xs={4} md={3} lg={2} key={cat.id}>

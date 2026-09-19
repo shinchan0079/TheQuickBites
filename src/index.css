@@ -18,6 +18,7 @@
   --radius-md: 0.5rem;
   --radius-lg: 1rem;
   --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
   --radius-full: 9999px;
 }
 
@@ -59,6 +60,8 @@ body {
 .btn-primary:hover { background-color: #e5a700; }
 .btn-dark { background-color: var(--primary-dark); color: var(--white); }
 .btn-dark:hover { background-color: #0c241c; }
+.btn-success { background-color: var(--primary-light); color: var(--white); }
+.btn-success:hover { background-color: #278f11; }
 
 .flex { display: flex; }
 .flex-col { flex-direction: column; }
@@ -137,7 +140,7 @@ body {
 
   .nav-item {
     padding: 0.5rem 1rem;
-    border-radius: 99px;
+    border-radius: var(--radius-full);
     cursor: pointer;
     display: flex;
     align-items: center;

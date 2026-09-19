@@ -14,7 +14,7 @@ const HowItWorks = () => {
     <section className="py-5 how-section">
       <Container>
         <div className="text-center mb-5">
-          <h3 className="fw-bold mb-2 how-title">How It Works</h3>
+          <h2 className="fw-bold mb-2 how-title">How It Works</h2>
           <p className="text-muted">Four simple steps to satisfy your cravings</p>
         </div>
         
@@ -28,7 +28,7 @@ const HowItWorks = () => {
                 <div className="mx-auto mb-3 d-flex align-items-center justify-content-center text-white fw-bold shadow-sm hover-card how-step-circle">
                   {step.num}
                 </div>
-                <h6 className="fw-bold mb-1 how-step-title">{step.title}</h6>
+                <h4 className="fw-bold mb-1 fs-6 how-step-title">{step.title}</h4>
                 <p className="small text-muted">{step.desc}</p>
               </Col>
             ))}

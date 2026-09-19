@@ -25,7 +25,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <Col lg={2} md={6}>
-            <h5 className="text-white fw-bold mb-4">Quick Links</h5>
+            <h3 className="text-white fw-bold mb-4 fs-5">Quick Links</h3>
             <ul className="list-unstyled d-flex flex-column gap-2 footer-links">
               <li>Home</li>
               <li>Orders</li>
@@ -36,7 +36,7 @@ const Footer = () => {
 
           {/* Support */}
           <Col lg={3} md={6}>
-            <h5 className="text-white fw-bold mb-4">Support</h5>
+            <h3 className="text-white fw-bold mb-4 fs-5">Support</h3>
             <ul className="list-unstyled d-flex flex-column gap-2 footer-links">
               <li>Help Center</li>
               <li>Contact Us</li>
@@ -47,7 +47,7 @@ const Footer = () => {
 
           {/* Contact / Newsletter */}
           <Col lg={3} md={6}>
-            <h5 className="text-white fw-bold mb-4">Partner with us</h5>
+            <h3 className="text-white fw-bold mb-4 fs-5">Partner with us</h3>
             <p className="footer-partner-desc">Own a local street food stall? Join us and boost your sales.</p>
             <button className="btn w-100 fw-bold footer-join-btn">
               Join As Vendor
