@@ -1,0 +1,41 @@
+.popular-foods-title {
+  color: var(--primary-dark);
+}
+
+.food-card {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.food-img-wrapper {
+  height: 180px;
+  overflow: hidden;
+}
+
+.food-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.food-footer {
+  border-top-style: dashed !important;
+}
+
+.food-price {
+  color: var(--primary-dark);
+}
+
+.food-add-btn {
+  border-color: var(--primary-light);
+  color: var(--primary-dark);
+}
+
+.food-add-icon {
+  font-size: 1rem;
+  line-height: 0;
+}
+
+.popular-explore-btn {
+  border-color: var(--border-color);
+}

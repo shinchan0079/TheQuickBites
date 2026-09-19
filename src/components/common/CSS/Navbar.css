@@ -1,0 +1,48 @@
+.navbar-logo-wrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.navbar-logo {
+  height: 48px;
+  object-fit: contain;
+}
+.navbar-location {
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 99px;
+  background-color: var(--bg-offwhite);
+}
+.navbar-mobile-cart {
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+.navbar-notification {
+  position: relative;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.navbar-notification-dot {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary-orange);
+  border-radius: 50%;
+}
+.navbar-profile {
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+}
+.navbar-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}

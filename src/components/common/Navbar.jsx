@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { FiHome, FiClipboard, FiShoppingCart, FiUser, FiMapPin, FiBell, FiChevronDown } from 'react-icons/fi';
+import './CSS/Navbar.css';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -9,17 +10,17 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <div className="desktop-navbar">
+    <div className="custom-navbar">
       <div className="d-flex align-items-center gap-4">
         {/* Logo */}
-        <div style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} onClick={() => navigate('/')}>
-          <img src="/logo.png.png" alt="TheQuickBites Logo" style={{ height: '48px', objectFit: 'contain' }} />
+        <div className="navbar-logo-wrapper" onClick={() => navigate('/')}>
+          <img src="/logo.png.png" alt="TheQuickBites Logo" className="navbar-logo" />
         </div>
 
         {/* Location Selector (Interactive) */}
-        <div className="d-none d-lg-flex align-items-center text-muted" style={{ cursor: 'pointer', fontSize: '0.9rem', padding: '0.5rem 1rem', borderRadius: '99px', backgroundColor: 'var(--bg-offwhite)' }}>
+        <div className="navbar-location d-none d-lg-flex align-items-center text-muted">
           <FiMapPin color="var(--primary-orange)" className="me-2" />
-          <span className="fw-semibold me-1 text-dark">Santpur, Misrauliya</span>
+          <span className="fw-semibold me-1 text-dark">Deliver to Address</span>
           <FiChevronDown />
         </div>
       </div>
@@ -40,26 +41,25 @@ const Navbar = () => {
       {/* Right Side Icons */}
       <div className="d-flex align-items-center gap-3">
         {/* Search Icon (Mobile) */}
-        <div className="d-md-none" style={{ cursor: 'pointer', fontSize: '1.25rem' }}>
+        <div className="navbar-mobile-cart d-md-none">
           <FiShoppingCart onClick={() => navigate('/cart')} />
         </div>
 
         {/* Notification */}
-        <div style={{ position: 'relative', cursor: 'pointer', padding: '0.5rem' }} className="d-none d-md-block hover-bg-light rounded-circle">
+        <div className="navbar-notification d-none d-md-block hover-bg-light rounded-circle">
           <FiBell size={20} color="var(--text-dark)" />
-          <span style={{ position: 'absolute', top: '4px', right: '4px', width: '8px', height: '8px', backgroundColor: 'var(--primary-orange)', borderRadius: '50%' }}></span>
+          <span className="navbar-notification-dot"></span>
         </div>
 
         {/* User Profile / Avatar */}
         <div 
-          className="d-flex align-items-center gap-2 hover-bg-light rounded-pill p-1 pe-3" 
-          style={{ cursor: 'pointer', border: '1px solid var(--border-color)' }}
+          className="navbar-profile d-flex align-items-center gap-2 hover-bg-light rounded-pill p-1 pe-3" 
           onClick={() => navigate('/profile')}
         >
-          <div style={{ width: '32px', height: '32px', borderRadius: '50%', backgroundColor: 'var(--primary-dark)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white' }}>
+          <div className="navbar-avatar">
             <FiUser size={16} />
           </div>
-          <span className="d-none d-md-block fw-semibold text-sm">Abhay</span>
+          <span className="d-none d-md-block fw-semibold text-sm">User</span>
         </div>
       </div>
     </div>

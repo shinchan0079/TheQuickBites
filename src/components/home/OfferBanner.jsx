@@ -1,29 +1,55 @@
 import React from 'react';
 import { Container, Card, Row, Col, Button } from 'react-bootstrap';
+import './CSS/OfferBanner.css';
 
 const OfferBanner = () => {
   return (
     <section className="py-4">
       <Container>
-        <Card className="border-0 shadow-sm" style={{ backgroundColor: 'var(--primary-dark)', color: 'white', borderRadius: '1.5rem' }}>
-          <Card.Body className="p-4 p-md-5">
-            <Row className="align-items-center">
-              <Col md={8} className="mb-3 mb-md-0">
-                <h2 className="fw-bold mb-1">Flat 20% OFF</h2>
-                <h4 className="mb-3">On Your First Order</h4>
-                <div className="d-inline-block px-3 py-1 bg-white text-dark rounded-pill fw-bold mb-4" style={{ border: '2px dashed var(--primary-light)' }}>
-                  Use Code: TQB20
-                </div>
-                <div>
-                  <Button variant="primary" className="btn-primary rounded-pill px-4 fw-bold" style={{ width: 'auto' }}>Order Now</Button>
-                </div>
-              </Col>
-              <Col md={4} className="text-center d-none d-md-block" style={{ height: '200px' }}>
-                <img src="/offer-food.jpg" alt="Special Offer" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '1rem' }} />
-              </Col>
-            </Row>
-          </Card.Body>
-        </Card>
+        <Row className="g-4">
+          <Col lg={6}>
+            <Card className="border-0 shadow-sm h-100 offer-card primary">
+              <Card.Body className="p-4 p-md-4">
+                <Row className="align-items-center h-100">
+                  <Col xs={7} md={8}>
+                    <h2 className="fw-bold mb-1 offer-title">Flat 20% OFF</h2>
+                    <h5 className="mb-3">On Your First Order</h5>
+                    <div className="d-inline-block px-3 py-1 bg-white text-dark rounded-pill fw-bold mb-3 small offer-code-badge">
+                      Code: TQB20
+                    </div>
+                    <div>
+                      <Button variant="primary" size="sm" className="btn-primary rounded-pill px-4 fw-bold shadow-sm offer-btn">Order Now</Button>
+                    </div>
+                  </Col>
+                  <Col xs={5} md={4} className="text-center offer-img-wrapper">
+                    <img src="/offer-food.jpg" alt="Special Offer" className="offer-img" />
+                  </Col>
+                </Row>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col lg={6}>
+            <Card className="border-0 shadow-sm h-100 offer-card secondary">
+              <Card.Body className="p-4 p-md-4">
+                <Row className="align-items-center h-100">
+                  <Col xs={7} md={8}>
+                    <h2 className="fw-bold mb-1 offer-title">Free Delivery</h2>
+                    <h5 className="mb-3">On Orders Above ₹149</h5>
+                    <div className="d-inline-block px-3 py-1 bg-white text-dark rounded-pill fw-bold mb-3 small offer-code-badge secondary">
+                      Code: FREEDEL
+                    </div>
+                    <div>
+                      <Button variant="dark" size="sm" className="btn-dark rounded-pill px-4 fw-bold shadow-sm offer-btn">Claim Now</Button>
+                    </div>
+                  </Col>
+                  <Col xs={5} md={4} className="text-center offer-img-wrapper">
+                    <img src="/cat_burger.jpg" alt="Free Delivery Offer" className="offer-img" />
+                  </Col>
+                </Row>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
       </Container>
     </section>
   );

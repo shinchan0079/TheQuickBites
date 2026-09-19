@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import './CSS/HowItWorks.css';
 
 const HowItWorks = () => {
   const steps = [
@@ -10,31 +11,24 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section className="py-5" style={{ backgroundColor: 'var(--bg-offwhite)' }}>
+    <section className="py-5 how-section">
       <Container>
         <div className="text-center mb-5">
-          <h3 className="fw-bold mb-2" style={{ color: 'var(--primary-dark)' }}>How It Works</h3>
+          <h3 className="fw-bold mb-2 how-title">How It Works</h3>
           <p className="text-muted">Four simple steps to satisfy your cravings</p>
         </div>
         
         <div className="position-relative mt-5">
           {/* Dashed Line behind steps */}
-          <div className="d-none d-md-block position-absolute" style={{ top: '35px', left: '15%', right: '15%', height: '2px', borderTop: '3px dashed var(--primary-light)', zIndex: 0, opacity: 0.5 }}></div>
+          <div className="d-none d-md-block position-absolute how-dashed-line"></div>
           
-          <Row className="g-4 text-center justify-content-center position-relative" style={{ zIndex: 1 }}>
+          <Row className="g-4 text-center justify-content-center position-relative how-steps-row">
             {steps.map((step, idx) => (
               <Col xs={6} md={3} key={idx}>
-                <div 
-                  className="mx-auto mb-3 d-flex align-items-center justify-content-center text-white fw-bold shadow-sm hover-card" 
-                  style={{ 
-                    width: '70px', height: '70px', borderRadius: '50%', 
-                    backgroundColor: 'var(--primary-orange)', fontSize: '1.5rem',
-                    border: '5px solid white'
-                  }}
-                >
+                <div className="mx-auto mb-3 d-flex align-items-center justify-content-center text-white fw-bold shadow-sm hover-card how-step-circle">
                   {step.num}
                 </div>
-                <h6 className="fw-bold mb-1" style={{ color: 'var(--primary-dark)' }}>{step.title}</h6>
+                <h6 className="fw-bold mb-1 how-step-title">{step.title}</h6>
                 <p className="small text-muted">{step.desc}</p>
               </Col>
             ))}

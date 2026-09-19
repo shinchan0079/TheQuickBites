@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FiZap, FiShield, FiHeart, FiSmile } from 'react-icons/fi';
+import './CSS/WhyChooseUs.css';
 
 const WhyChooseUs = () => {
   const reasons = [
@@ -14,15 +15,15 @@ const WhyChooseUs = () => {
     <section className="py-5 bg-white">
       <Container>
         <div className="text-center mb-5">
-          <h3 className="fw-bold mb-2" style={{ color: 'var(--primary-dark)' }}>Why Choose TheQuickBites?</h3>
+          <h3 className="fw-bold mb-2 why-title">Why Choose TheQuickBites?</h3>
           <p className="text-muted">We bring the best street food experience to your home.</p>
         </div>
         
         <Row className="g-4">
           {reasons.map((reason, idx) => (
             <Col md={6} lg={3} key={idx}>
-              <Card className="border-0 shadow-sm h-100 text-center p-4 hover-card" style={{ borderRadius: '1rem', backgroundColor: 'var(--bg-offwhite)' }}>
-                <div className="mx-auto mb-4 d-flex align-items-center justify-content-center" style={{ width: '80px', height: '80px', borderRadius: '50%', backgroundColor: 'white', color: reason.color, boxShadow: '0 10px 20px rgba(0,0,0,0.05)' }}>
+              <Card className="border-0 shadow-sm h-100 text-center p-4 hover-card why-card">
+                <div className="mx-auto mb-4 d-flex align-items-center justify-content-center why-icon-wrapper" style={{ color: reason.color }}>
                   {reason.icon}
                 </div>
                 <Card.Body className="p-0">

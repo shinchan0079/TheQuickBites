@@ -1,0 +1,39 @@
+.offer-card {
+  color: white;
+  border-radius: 1.5rem;
+}
+
+.offer-card.primary {
+  background-color: var(--primary-dark);
+}
+
+.offer-card.secondary {
+  background-color: var(--primary-orange);
+}
+
+.offer-title {
+  font-size: 1.75rem;
+}
+
+.offer-code-badge {
+  border: 2px dashed var(--primary-light);
+}
+
+.offer-code-badge.secondary {
+  border-color: var(--primary-dark);
+}
+
+.offer-btn {
+  width: auto;
+}
+
+.offer-img-wrapper {
+  height: 140px;
+}
+
+.offer-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}

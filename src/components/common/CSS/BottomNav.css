@@ -1,0 +1,13 @@
+.bottom-nav-wrapper {
+  cursor: pointer;
+}
+.bottom-nav-icon {
+  font-size: 1.5rem;
+  display: flex;
+}
+.bottom-nav-icon.active {
+  opacity: 1;
+}
+.bottom-nav-icon.inactive {
+  opacity: 0.6;
+}

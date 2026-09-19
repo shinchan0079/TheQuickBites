@@ -1,0 +1,29 @@
+.how-section {
+  background-color: var(--bg-offwhite);
+}
+.how-title {
+  color: var(--primary-dark);
+}
+.how-dashed-line {
+  top: 35px;
+  left: 15%;
+  right: 15%;
+  height: 2px;
+  border-top: 3px dashed var(--primary-light);
+  z-index: 0;
+  opacity: 0.5;
+}
+.how-steps-row {
+  z-index: 1;
+}
+.how-step-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--primary-orange);
+  font-size: 1.5rem;
+  border: 5px solid white;
+}
+.how-step-title {
+  color: var(--primary-dark);
+}

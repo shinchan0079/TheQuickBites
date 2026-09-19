@@ -1,0 +1,14 @@
+.why-title {
+  color: var(--primary-dark);
+}
+.why-card {
+  border-radius: 1rem;
+  background-color: var(--bg-offwhite);
+}
+.why-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
