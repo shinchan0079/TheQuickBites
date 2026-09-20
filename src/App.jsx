@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// Splash & Onboarding
+// Splash & Onboarding start
 import Splash from './pages/Splash';
 import OnBoarding from './pages/OnBoarding';
 
-// Pages
+// Pages start
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Cart from './pages/Cart';
@@ -17,7 +17,17 @@ import Payment from './pages/Payment';
 
 const App = () => {
   const [screen, setScreen] = useState("Splash");
-  const [cartItems, setCartItems] = useState([]);
+
+  // =============== CART STATE (PROP DRILLING) ===============
+  const [cartItems, setCartItems] = useState(() => {
+    const savedCart = localStorage.getItem("quickBitesCart");
+    return savedCart ? JSON.parse(savedCart) : [];
+  });
+
+  // Save cart to local storage whenever it changes
+  useEffect(() => {
+    localStorage.setItem("quickBitesCart", JSON.stringify(cartItems));
+  }, [cartItems]);
 
   // Add an item to the cart, or increase quantity if it already exists
   const addToCart = (item) => {
@@ -51,7 +61,7 @@ const App = () => {
     // Zoom effect on Splash after 800ms
     const zoomTimer = setTimeout(() => {
       setZoom(true);
-    }, 800);
+    }, 900);
 
     // Transition to Onboarding after 1500ms
     const screenTimer = setTimeout(() => {
