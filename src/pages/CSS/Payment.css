@@ -1,17 +1,16 @@
-.payment-page-outer {
-* {
+.payment-page-outer * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-& {
+.payment-page-outer {
     background-color: #F9F6E7;
     font-family: "Poppins", sans-serif;
     color: #26332B;
 }
 
-button {
+.payment-page-outer button {
     font-family: inherit;
 }
 
@@ -20,7 +19,7 @@ button {
    MAIN
 ========================================= */
 
-& {
+.payment-page-outer {
     min-height: 100vh;
     width: 100%;
     background-color: #F9F6E7;
@@ -854,5 +853,4 @@ button {
     .bottom-total strong {
         font-size: 15px;
     }
-}
 }

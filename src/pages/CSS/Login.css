@@ -1,10 +1,9 @@
-.login-page-outer {
-* {
+.login-page-outer * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-& {
+.login-page-outer{
     height: 100vh;
     width: 100%;
     /* border: 1px solid red; */
@@ -70,18 +69,18 @@
     outline: none;
     font-size: 20px;
 }
-input {
+.login-page-outer input {
     height: 60px;
     width: 300px;
     border-radius: 30px;
     background-color: #4C5E5B;
 }
-input::placeholder {
+.login-page-outer input::placeholder {
   font-family: 'Arial', sans-serif;
   font-size: 20px;
   color: white;
 }
-button {
+.login-page-outer button {
     height: 60px;
     width: 350px;
     border-radius: 30px;
@@ -154,5 +153,4 @@ button {
     color: #FD8D03;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-}
 }

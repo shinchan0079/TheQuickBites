@@ -1,10 +1,9 @@
-.category-page-outer {
-* {
+.category-page-outer * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-& {
+.category-page-outer{
     height: 100vh;
     width: 100%;
     background-color: #F9F6E7;
@@ -18,11 +17,11 @@
     /* border: 1px solid; */
     /* margin-top: 100px; */
 }
-h2 {
+.category-page-outer h2 {
     margin-top: 40px;
     margin-left: 20px;
 }
-#arrow {
+.category-page-outer #arrow {
    margin-top: 40px;
    margin-left: 20px;
    font-size: 20px;
@@ -73,5 +72,4 @@ h2 {
 #more{
     height: 60px;
     width: 60px;
-}
 }
