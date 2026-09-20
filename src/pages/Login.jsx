@@ -30,12 +30,12 @@ const Login = () => {
               <div className="input-outer">
                 <div className="user-icon"><RiLockPasswordLine /></div>
                 <div className="input-box">
-                  <input type="password" placeholder='Password' className='input-text' />
+                  <input type="text" placeholder='OTP' className='input-text' />
                 </div>
               </div>
 
               <br />
-              <button onClick={() => navigate('/profile')}>Login</button>
+              <button onClick={() => navigate('/')}>Login</button>
 
               <br />
               <div className="continue-outer">

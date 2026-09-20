@@ -108,7 +108,7 @@ const App = () => {
   };
 
   const finishOnboarding = () => {
-    window.history.pushState(null, '', '/');
+    window.history.pushState(null, '', '/login');
     setScreen("Main");
   };
 
