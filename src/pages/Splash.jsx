@@ -3,7 +3,7 @@ import "./CSS/Splash.css";
 
 const Splash = ({ zoom }) => {
   return (
-    <div className={`container ${zoom ? "zoom-active" : ""}`}>
+    <div className={`splash-container ${zoom ? "zoom-active" : ""}`}>
       <div className="image">
         <img
           src="/images/bgimagesplash.png"

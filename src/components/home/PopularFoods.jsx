@@ -21,7 +21,7 @@ const getImage = (name) => {
   return '/cat_snacks.jpg';
 };
 
-const PopularFoods = () => {
+const PopularFoods = ({ cartItems = [], addToCart, decreaseQuantity }) => {
   return (
     <section className="py-5 bg-white">
       <Container>
@@ -40,9 +40,33 @@ const PopularFoods = () => {
                   </div>
                   <div className="d-flex justify-content-end align-items-center border-top pt-3 mt-1 gap-4 food-footer">
                     <div className="fw-bold fs-5 food-price mb-0">₹{food.price}</div>
-                    <Button variant="success" className="btn-success rounded-pill px-4 py-2 fw-bold shadow-sm food-add-btn">
-                      ADD
-                    </Button>
+                    {cartItems.find((i) => i.id === food.id) ? (
+                      <div className="d-flex align-items-center border border-success rounded-pill px-2 py-1 bg-white">
+                        <div 
+                          className="px-2 fw-bold text-success cursor-pointer fs-5" 
+                          style={{cursor: 'pointer'}}
+                          onClick={() => decreaseQuantity(food.id)}
+                        >
+                          -
+                        </div>
+                        <div className="px-2 fw-bold text-success">{cartItems.find((i) => i.id === food.id).quantity}</div>
+                        <div 
+                          className="px-2 fw-bold text-success cursor-pointer fs-5" 
+                          style={{cursor: 'pointer'}}
+                          onClick={() => addToCart({ ...food, image: getImage(food.name) })}
+                        >
+                          +
+                        </div>
+                      </div>
+                    ) : (
+                      <Button 
+                        variant="success" 
+                        className="btn-success rounded-pill px-4 py-2 fw-bold shadow-sm food-add-btn"
+                        onClick={() => addToCart({ ...food, image: getImage(food.name) })}
+                      >
+                        ADD
+                      </Button>
+                    )}
                   </div>
                 </Card.Body>
               </Card>

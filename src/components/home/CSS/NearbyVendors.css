@@ -36,7 +36,7 @@
   top: 10px;
   right: 10px;
   background-color: rgba(255, 255, 255, 0.9);
-  padding: 0.4rem;
+  padding: 6px;
   border-radius: 50%;
   cursor: pointer;
   z-index: 2;
@@ -47,14 +47,15 @@
 }
 
 .vendor-rating-badge {
-  font-size: 0.75rem;
+  font-size: 12px;
 }
 
 .vendor-tags {
   border-top-style: dashed !important;
-  font-size: 0.8rem;
+  font-size: 13px;
 }
 
 .vendors-view-more-btn {
   border-color: var(--border-color);
 }
+

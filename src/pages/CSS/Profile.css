@@ -1,0 +1,112 @@
+.profile-page-outer {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+& {
+    height: 100vh;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+.user-box-outer{
+    height: 25vh;
+    width: 100%;
+    /* border: 2px solid yellow; */
+    background-color: #F9F6E7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.profile-photo{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    /* border: 1px solid; */
+}
+.profile-photo img{
+    height: 109px;
+    width: 109px;
+    border-radius: 50%;
+}
+.username{
+    height: 110px;
+    width: 200px;
+    /* border: 1px solid; */
+    line-height: 15px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+.user-section-outer{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    background-color: #F9F6E7;
+    /* border: 2px solid yellowgreen; */
+}
+.section{
+    height: 70px;
+    width: 380px;
+    /* border: 1px solid; */
+    border-radius: 10px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: space-evenly;
+}
+.activity-section-outer{
+    height: 60px;
+    width: 300px;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.activity-logo-outer{
+    height: 50px;
+    width: 50px;
+    /* border: 1px solid; */
+    margin-left: 10px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.activity-outer{
+    height: 50px;
+    width: 150px;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.activity-outer1{
+    height: 50px;
+    width: 210px;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.activity-arrow{
+    height: 50px;
+    width: 50px;
+    /* border: 1px solid; */
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}

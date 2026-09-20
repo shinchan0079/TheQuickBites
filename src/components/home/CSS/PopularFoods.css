@@ -34,10 +34,11 @@
 }
 
 .food-add-icon {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 0;
 }
 
 .popular-explore-btn {
   border-color: var(--border-color);
 }
+

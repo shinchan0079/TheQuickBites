@@ -2,7 +2,7 @@
   cursor: pointer;
 }
 .bottom-nav-icon {
-  font-size: 1.5rem;
+  font-size: 24px;
   display: flex;
 }
 .bottom-nav-icon.active {
@@ -11,3 +11,4 @@
 .bottom-nav-icon.inactive {
   opacity: 0.6;
 }
+

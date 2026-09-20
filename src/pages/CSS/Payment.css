@@ -1,0 +1,858 @@
+.payment-page-outer {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+& {
+    background-color: #F9F6E7;
+    font-family: "Poppins", sans-serif;
+    color: #26332B;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+& {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #F9F6E7;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    height: 70px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #FFFDF7;
+
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo-main-outer {
+    height: 70px;
+    width: 210px;
+
+    display: flex;
+    align-items: center;
+}
+
+.arrow-outer {
+    height: 60px;
+    width: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #176C4D;
+    font-size: 19px;
+}
+
+.logo-outer {
+    height: 60px;
+    width: 130px;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo-outer img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+.question-outer {
+    height: 60px;
+    width: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #176C4D;
+    font-size: 21px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.payment-content {
+    width: 100%;
+    max-width: 550px;
+
+    padding: 10px 15px 0;
+}
+
+
+/* =========================================
+   DELIVERY ADDRESS
+========================================= */
+
+.user-info {
+    min-height: 106px;
+    width: 100%;
+
+    display: flex;
+
+    background-color: #FFFDF8;
+
+    border: 1px solid #EBE8DC;
+    border-radius: 9px;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+
+    overflow: hidden;
+}
+
+.location-outer {
+    width: 48px;
+    min-height: 100px;
+
+    display: flex;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+#location {
+    margin-top: 12px;
+
+    color: #176C4D;
+    font-size: 21px;
+}
+
+.deliver-to {
+    min-height: 105px;
+    flex: 1;
+
+    padding-top: 5px;
+
+    min-width: 0;
+}
+
+.deliver-to h4 {
+    font-size: 13px;
+    font-weight: 600;
+
+    margin-bottom: 3px;
+}
+
+.home-icon {
+    height: 18px;
+    width: max-content;
+    min-width: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 3px;
+
+    padding: 0 5px;
+
+    color: #176C4D;
+
+    background-color: #E7EDE1;
+
+    border: 1px solid #D5DFD1;
+    border-radius: 5px;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.address {
+    font-size: 10.5px;
+    line-height: 1.35;
+
+    margin-top: 3px;
+
+    color: #555D56;
+}
+
+.address strong {
+    color: #27312B;
+}
+
+.change {
+    height: 25px;
+    width: 70px;
+
+    margin-top: 12px;
+    margin-right: 7px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    color: #176C4D;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-section {
+    width: 100%;
+
+    margin-top: 8px;
+
+    background-color: #FFFDF8;
+
+    border: 1px solid #EBE8DC;
+    border-radius: 9px;
+
+    overflow: hidden;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.contact-heading {
+    min-height: 32px;
+
+    padding: 5px 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.edit-contact {
+    display: flex;
+    align-items: center;
+
+    color: #176C4D;
+
+    font-size: 10px;
+}
+
+.contact-row {
+    min-height: 37px;
+
+    width: 100%;
+
+    border-top: 1px solid #EEEE E6;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 11px;
+}
+
+.contact-left {
+    display: flex;
+    align-items: center;
+
+    min-width: 0;
+}
+
+.contact-icon {
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+}
+
+.call-color {
+    color: #176C4D;
+}
+
+.whatsapp-color {
+    color: #19A65B;
+}
+
+.contact-text {
+    font-size: 10.5px;
+    color: #3D463F;
+}
+
+.contact-arrow {
+    color: #789087;
+    font-size: 17px;
+}
+
+
+/* =========================================
+   STATIC TOGGLE
+========================================= */
+
+.toggle {
+    width: 27px;
+    height: 16px;
+
+    padding: 2px;
+
+    border-radius: 20px;
+
+    background-color: #1B9B62;
+}
+
+.toggle-circle {
+    width: 12px;
+    height: 12px;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    margin-left: 11px;
+}
+
+
+/* =========================================
+   DELIVERY INSTRUCTION
+========================================= */
+
+.delivery-instruction {
+    min-height: 47px;
+    width: 100%;
+
+    margin-top: 8px;
+    padding: 6px 11px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #FFFDF8;
+
+    border: 1px solid #EBE8DC;
+    border-radius: 9px;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.instruction-icon {
+    width: 29px;
+
+    display: flex;
+    align-items: center;
+
+    color: #176C4D;
+
+    font-size: 15px;
+}
+
+.instruction-content {
+    flex: 1;
+}
+
+.instruction-title {
+    font-size: 10.5px;
+    font-weight: 600;
+}
+
+.instruction-subtitle {
+    font-size: 9px;
+    color: #8A938D;
+
+    margin-top: 1px;
+}
+
+.section-arrow {
+    color: #73827A;
+    font-size: 17px;
+}
+
+
+/* =========================================
+   OFFERS
+========================================= */
+
+.offers-section {
+    min-height: 53px;
+    width: 100%;
+
+    margin-top: 8px;
+    padding: 7px 11px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #FFFDF8;
+
+    border: 1px solid #EBE8DC;
+    border-radius: 9px;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.offers-left {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+}
+
+.offer-icon {
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #176C4D;
+
+    background-color: #E8F0E5;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+}
+
+.offer-title {
+    font-size: 10.5px;
+    font-weight: 600;
+}
+
+.offer-subtitle {
+    font-size: 8.5px;
+    color: #8B938E;
+
+    margin-top: 1px;
+}
+
+.offer-right {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    color: #6D7C73;
+}
+
+.offer-badge {
+    font-size: 8px;
+
+    color: #4B9B66;
+
+    background-color: #EDF6E9;
+
+    padding: 4px 6px;
+
+    border-radius: 5px;
+}
+
+
+/* =========================================
+   PAYMENT
+========================================= */
+
+.payment-section {
+    width: 100%;
+
+    margin-top: 8px;
+
+    background-color: #FFFDF8;
+
+    border: 1px solid #EBE8DC;
+    border-radius: 9px;
+
+    overflow: hidden;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.payment-heading {
+    min-height: 36px;
+
+    padding: 5px 11px;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #EEEE E6;
+}
+
+.payment-title-left {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    color: #344039;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.payment-title-left svg {
+    color: #176C4D;
+}
+
+.payment-option {
+    min-height: 47px;
+
+    padding: 5px 11px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    border-bottom: 1px solid #F1EFE8;
+}
+
+.payment-option:last-child {
+    border-bottom: none;
+}
+
+.radio {
+    width: 14px;
+    height: 14px;
+
+    border: 1.5px solid #B9C3BC;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.payment-option.selected .radio {
+    border-color: #1B8B5B;
+}
+
+.radio-inner {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background-color: #1B8B5B;
+}
+
+.payment-option-icon {
+    width: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #176C4D;
+
+    font-size: 15px;
+}
+
+.payment-option-text {
+    flex: 1;
+}
+
+.payment-name {
+    font-size: 10px;
+    color: #39443D;
+}
+
+.payment-subtitle {
+    font-size: 8px;
+    color: #929992;
+
+    margin-top: 1px;
+}
+
+.most-popular {
+    font-size: 7px;
+
+    color: #EF9B58;
+
+    background-color: #FFF1DF;
+
+    padding: 3px 5px;
+
+    border-radius: 4px;
+}
+
+
+/* =========================================
+   BILL DETAILS
+========================================= */
+
+.bill-section {
+    width: 100%;
+
+    margin-top: 8px;
+
+    background-color: #FFFDF8;
+
+    border: 1px solid #EBE8DC;
+    border-radius: 9px;
+
+    padding: 8px 11px;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.bill-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid #EEEE E6;
+}
+
+.bill-title {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 10.5px;
+    font-weight: 600;
+}
+
+.bill-title svg {
+    color: #176C4D;
+}
+
+.bill-heading > svg {
+    color: #8B958F;
+    font-size: 14px;
+}
+
+.bill-row {
+    min-height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 9px;
+
+    color: #69736C;
+}
+
+.bill-row span:last-child {
+    color: #374139;
+}
+
+.total-row {
+    min-height: 30px;
+
+    margin-top: 2px;
+    padding-top: 5px;
+
+    border-top: 1px solid #E7E5DD;
+}
+
+.total-row strong {
+    font-size: 11px;
+    color: #26342D;
+}
+
+
+/* =========================================
+   BOTTOM BAR
+========================================= */
+
+.bottom-space {
+    height: 75px;
+}
+
+.bottom-order-bar {
+    position: fixed;
+
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+    max-width: 550px;
+
+    min-height: 65px;
+
+    padding: 7px 15px;
+
+    background-color: #FFFDF8;
+
+    border-top: 1px solid #E3E1D8;
+
+    box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 20;
+}
+
+.bottom-total {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-total span {
+    font-size: 8px;
+    color: #667169;
+}
+
+.bottom-total strong {
+    font-size: 17px;
+    color: #176C4D;
+}
+
+.place-order-btn {
+    height: 39px;
+    min-width: 175px;
+
+    border: none;
+    border-radius: 21px;
+
+    background-color: #176C4D;
+
+    color: white;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .header {
+        height: 62px;
+    }
+
+    .logo-main-outer {
+        height: 62px;
+        width: 180px;
+    }
+
+    .arrow-outer {
+        height: 62px;
+        width: 45px;
+    }
+
+    .logo-outer {
+        height: 62px;
+        width: 120px;
+    }
+
+    .logo-outer img {
+        width: 105px;
+    }
+
+    .question-outer {
+        height: 62px;
+        width: 45px;
+    }
+
+    .payment-content {
+        padding: 8px 10px 0;
+    }
+
+    .user-info {
+        min-height: 101px;
+    }
+
+    .location-outer {
+        width: 40px;
+    }
+
+    #location {
+        font-size: 19px;
+    }
+
+    .deliver-to h4 {
+        font-size: 12px;
+    }
+
+    .address {
+        font-size: 9.5px;
+    }
+
+    .change {
+        width: 58px;
+        font-size: 9px;
+    }
+
+    .place-order-btn {
+        min-width: 155px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 360px) {
+
+    .payment-content {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    .logo-main-outer {
+        width: 165px;
+    }
+
+    .place-order-btn {
+        min-width: 140px;
+        font-size: 10px;
+    }
+
+    .bottom-order-bar {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .bottom-total strong {
+        font-size: 15px;
+    }
+}
+}

@@ -6,11 +6,11 @@ const OnBoarding = ({ board, currentBoard, onSwipe, onGoTo,login }) => {
   const startX = useRef(0);
 
   const handleTouchStart = (e) => {
-    startX.current = e.touches[0].clientX;
+    startX.current = e.touches ? e.touches[0].clientX : e.clientX;
   };
 
   const handleTouchEnd = (e) => {
-    const endX = e.changedTouches[0].clientX;
+    const endX = e.changedTouches ? e.changedTouches[0].clientX : e.clientX;
 
     const distance = startX.current - endX;
 
@@ -30,6 +30,8 @@ const OnBoarding = ({ board, currentBoard, onSwipe, onGoTo,login }) => {
       className="onboarding"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
+      onMouseDown={handleTouchStart}
+      onMouseUp={handleTouchEnd}
     >
 
       <div
@@ -43,11 +45,15 @@ const OnBoarding = ({ board, currentBoard, onSwipe, onGoTo,login }) => {
           <section className="onboarding-slide" key={item._id}>
             
             <button className="skip-button" onClick={login}>Skip</button>
-            {currentBoard === board.length - 1 && (
-    <button onClick={login} className="getstarted">
-    Get Started
-    </button>
-      )}
+            {currentBoard === board.length - 1 ? (
+              <button onClick={login} className="getstarted">
+                Get Started
+              </button>
+            ) : (
+              <button onClick={() => onSwipe("left")} className="getstarted">
+                Next
+              </button>
+            )}
             <div className="onboarding-content">
 
               <h1>

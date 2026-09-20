@@ -13,7 +13,7 @@ import WhyChooseUs from '../components/home/WhyChooseUs';
 import HowItWorks from '../components/home/HowItWorks';
 import VendorCTA from '../components/home/VendorCTA';
 
-const Home = () => {
+const Home = ({ cartItems, addToCart, decreaseQuantity }) => {
   return (
     <div className="main-layout">
       <Navbar />
@@ -22,7 +22,7 @@ const Home = () => {
         <Categories />
         <OfferBanner />
         <NearbyVendors />
-        <PopularFoods />
+        <PopularFoods cartItems={cartItems} addToCart={addToCart} decreaseQuantity={decreaseQuantity} />
         <WhyChooseUs />
         <HowItWorks />
         <VendorCTA />

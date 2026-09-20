@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
 import { FiMapPin, FiSearch } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom';
 import './CSS/Categories.css';
 
 const categories = [
@@ -16,6 +17,7 @@ const categories = [
 
 const Categories = () => {
   const [activeCategory, setActiveCategory] = useState(1);
+  const navigate = useNavigate();
 
   return (
     <section className="py-5 bg-white">
@@ -71,9 +73,9 @@ const Categories = () => {
             <Col xs={4} md={3} lg={2} key={cat.id}>
               <div
                 className={`category-wrapper ${activeCategory === cat.id ? 'active' : ''}`}
-                onClick={() => setActiveCategory(cat.id)}
+                onClick={() => cat.name === 'More' ? navigate('/category') : setActiveCategory(cat.id)}
               >
-                <div className="mx-auto mb-2 shadow-sm d-flex align-items-center justify-content-center category-card">
+                <div className="mx-auto mb-2 shadow-sm d-flex align-items-center justify-content-center home-category-card">
                   <img src={cat.image} alt={cat.name} className="category-img" />
                 </div>
                 <span className="fw-semibold category-title">

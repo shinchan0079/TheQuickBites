@@ -14,7 +14,7 @@
 }
 
 .offer-title {
-  font-size: 1.75rem;
+  font-size: 28px;
 }
 
 .offer-code-badge {
@@ -39,3 +39,4 @@
   object-fit: cover;
   border-radius: var(--radius-lg);
 }
+

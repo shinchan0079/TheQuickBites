@@ -1,12 +1,12 @@
 .footer-wrapper {
   background-color: var(--primary-dark);
   color: rgba(255,255,255,0.8);
-  padding: 4rem 0 2rem 0;
-  margin-top: 4rem;
+  padding: 64px 0 32px 0;
+  margin-top: 64px;
 }
 .footer-logo-wrapper {
   background-color: #ffffff00;
-  padding: 0.75rem 1.5rem;
+  padding: 12px 24px;
   border-radius: var(--radius-md);
   display: inline-flex;
   align-items: center;
@@ -18,18 +18,19 @@
   object-fit: fill;
 }
 .footer-desc {
-  font-size: 0.95rem;
+  font-size: 15px;
   line-height: 1.6;
 }
 .footer-partner-desc {
-  font-size: 0.9rem;
+  font-size: 14px;
 }
 .footer-join-btn {
   background-color: var(--primary-orange);
   color: white;
   border-radius: var(--radius-md);
-  padding: 0.75rem;
+  padding: 12px;
 }
 .footer-divider {
   border-color: rgba(255,255,255,0.1) !important;
 }
+

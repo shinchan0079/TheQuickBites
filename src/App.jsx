@@ -11,9 +11,39 @@ import Login from './pages/Login';
 import Cart from './pages/Cart';
 import Orders from './pages/Orders';
 import Profile from './pages/Profile';
+import VendorProfile from './pages/VendorProfile';
+import Category from './pages/Category';
+import Payment from './pages/Payment';
 
 const App = () => {
   const [screen, setScreen] = useState("Splash");
+  const [cartItems, setCartItems] = useState([]);
+
+  // Add an item to the cart, or increase quantity if it already exists
+  const addToCart = (item) => {
+    setCartItems((prevItems) => {
+      const existingItem = prevItems.find((i) => i.id === item.id);
+      if (existingItem) {
+        return prevItems.map((i) =>
+          i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i
+        );
+      }
+      return [...prevItems, { ...item, quantity: 1 }];
+    });
+  };
+
+  // Decrease quantity, or remove completely if quantity hits 0
+  const decreaseQuantity = (id) => {
+    setCartItems((prevItems) => {
+      const existingItem = prevItems.find((i) => i.id === id);
+      if (existingItem.quantity === 1) {
+        return prevItems.filter((i) => i.id !== id);
+      }
+      return prevItems.map((i) =>
+        i.id === id ? { ...i, quantity: i.quantity - 1 } : i
+      );
+    });
+  };
   const [zoom, setZoom] = useState(false);
   const [currentBoard, setCurrentBoard] = useState(0);
 
@@ -68,6 +98,7 @@ const App = () => {
   };
 
   const finishOnboarding = () => {
+    window.history.pushState(null, '', '/');
     setScreen("Main");
   };
 
@@ -96,10 +127,13 @@ const App = () => {
         <Route path="/signup" element={<Login />} />
         
         {/* Main App Routes */}
-        <Route path="/" element={<Home />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/" element={<Home cartItems={cartItems} addToCart={addToCart} decreaseQuantity={decreaseQuantity} />} />
+        <Route path="/cart" element={<Cart cartItems={cartItems} addToCart={addToCart} decreaseQuantity={decreaseQuantity} />} />
         <Route path="/orders" element={<Orders />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/vendor" element={<VendorProfile cartItems={cartItems} addToCart={addToCart} decreaseQuantity={decreaseQuantity} />} />
+        <Route path="/category" element={<Category />} />
+        <Route path="/payment" element={<Payment />} />
       </Routes>
     </Router>
   );
