@@ -1,6 +1,8 @@
 .offer-card {
   color: white;
   border-radius: var(--radius-xl);
+  max-width: 550px;
+  margin: 0 auto;
 }
 
 .offer-card.primary {

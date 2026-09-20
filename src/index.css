@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-  --primary-dark: #03331b;   /* Dark green from "TheQuick" text */
-  --primary-light: #2fa316;  /* Bright leaf green */
-  --primary-orange: #ff7b00; /* Vibrant orange from "Bites" */
-  --bg-offwhite: #Fafafa;    /* Very light grey/white background */
+  --primary-dark: #0F2D23;
+  --primary-light: #A4C639;
+  --primary-orange: #FF8A00;
+  --bg-offwhite: #FFF8EE;
   --text-dark: #1F1F1F;
   --text-muted: #666666;
   --border-color: #E2E8F0;
@@ -41,7 +41,6 @@ body {
   max-width: 480px; 
   margin: 0 auto;
   position: relative;
-  overflow-x: hidden;
 }
 
 .btn {

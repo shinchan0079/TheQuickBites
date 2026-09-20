@@ -5,6 +5,8 @@
 .food-card {
   border-radius: var(--radius-lg);
   overflow: hidden;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
 .food-img-wrapper {

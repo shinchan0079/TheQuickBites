@@ -1,9 +1,17 @@
 import React from 'react';
+import Navbar from '../components/common/Navbar';
+import Footer from '../components/common/Footer';
+import BottomNav from '../components/common/BottomNav';
 
 const Cart = () => {
   return (
-    <div className="container" style={{ padding: '2rem 1rem', textAlign: 'center' }}>
-      <h2>This is Cart Page</h2>
+    <div className="main-layout">
+      <Navbar />
+      <main className="container" style={{ padding: '2rem 1rem', textAlign: 'center' }}>
+        <h2>This is Cart Page</h2>
+      </main>
+      {/* <Footer /> */}
+      <BottomNav />
     </div>
   );
 };

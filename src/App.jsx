@@ -1,9 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-
-// Layouts
-import MainLayout from './layouts/MainLayout';
-import AuthLayout from './layouts/AuthLayout';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Pages
 import Home from './pages/Home';
@@ -17,18 +13,14 @@ const App = () => {
     <Router>
       <Routes>
         {/* Auth Routes */}
-        <Route element={<AuthLayout />}>
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Login />} /> {/* Assuming Login handles both for now */}
-        </Route>
-
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Login />} />
+        
         {/* Main App Routes */}
-        <Route element={<MainLayout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/orders" element={<Orders />} />
-          <Route path="/profile" element={<Profile />} />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/orders" element={<Orders />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>
   );

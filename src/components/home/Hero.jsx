@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container, Row, Col, Button, Form } from 'react-bootstrap';
-import { FiSearch, FiMapPin } from 'react-icons/fi';
+import { Container, Row, Col, Button, Form, Carousel } from 'react-bootstrap';
+
 import './CSS/Hero.css';
 
 const Hero = () => {
@@ -11,63 +11,38 @@ const Hero = () => {
 
       <Container className="hero-content position-relative">
         <Row className="align-items-center">
-          <Col lg={6} className="mb-5 mb-lg-0 pe-lg-5">
-            <div className="hero-location-badge d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill mb-4 shadow-sm">
-              <FiMapPin color="var(--primary-orange)" />
-              <span className="text-sm fw-semibold text-dark">Delivering to your Address</span>
-            </div>
-
-            <h1 className="hero-title display-5 fw-bold lh-sm mb-3">
-              Street Food, <br />
-              <span className="hero-title-highlight">अब आपके दरवाजे तक!</span>
-              <span className="hero-title-sub fs-4 fw-medium d-block mt-2">Right at your doorstep!</span>
-            </h1>
-            <p className="hero-subtitle text-muted mb-4 pe-lg-4">
-              अपने पसंदीदा लोकल स्टॉल से ताज़ा और स्वादिष्ट खाना ऑर्डर करें।<br />
-              <span className="small">Order fresh and tasty food from your favourite local stalls. Real taste, superfast delivery.</span>
-            </p>
-
-            <div className="hero-search-wrapper d-flex bg-white rounded-pill shadow-sm mb-4 border p-0 align-items-center overflow-hidden">
-              <div className="ps-4 d-flex align-items-center">
-                <FiSearch color="var(--primary-dark)" size={18} />
-              </div>
-              <Form.Control
-                placeholder="Search for chaat, momos or stalls..."
-                className="hero-search-input border-0 shadow-none bg-transparent"
-              />
-              <Button style={{ borderRadius: '0 var(--radius-full) var(--radius-full) 0', width: 'auto' }} className="hero-search-btn btn-primary px-4 py-3 fw-bold h-100 m-0">
-                Search
-              </Button>
-            </div>
-            
-            <div className="d-flex align-items-center gap-3 mt-4">
-              <span className="small text-muted fw-semibold">Popular:</span>
-              <span className="hero-badge badge rounded-pill bg-light text-dark border px-3 py-2">Golgappe</span>
-              <span className="hero-badge badge rounded-pill bg-light text-dark border px-3 py-2">Momos</span>
-              <span className="hero-badge badge rounded-pill bg-light text-dark border px-3 py-2">Burger</span>
-            </div>
-          </Col>
-          
-          <Col lg={6} className="text-center mt-4 mt-lg-0">
+          <Col lg={12} className="text-center mt-4 mt-lg-0">
             <div className="position-relative">
               <div className="hero-img-wrapper">
-                <img src="/hero-food.jpg" alt="Delicious Street Food" className="hero-img" />
+                <Carousel controls={false} indicators={false} fade interval={3000}>
+                  <Carousel.Item>
+                    <img src="/slider1.jpg" alt="Delicious Chaat" className="hero-img d-block w-100" />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img src="/slider2.jpg" alt="Food Stall" className="hero-img d-block w-100" />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img src="/slider3.jpg" alt="Hot Momos" className="hero-img d-block w-100" />
+                  </Carousel.Item>
+                </Carousel>
               </div>
               
               {/* Floating Badge */}
-              <div 
+              {/* <div 
                 className="hero-floating-badge position-absolute shadow-lg bg-white p-3 rounded-4"
-                style={{ bottom: 0, left: 0, transform: 'translate(-10%, 15%)' }}
+                style={{ bottom: 0, left: 0, transform: 'translate(-39%, 15%)' }}
               >
                 <div className="hero-lightning-icon">⚡</div>
                 <div>
                   <div className="hero-superfast-text fw-bold">Superfast</div>
-                  <div className="small text-muted">Delivery in 15 mins</div>
+                  <div className="small text-muted">Delivery in 25 mins</div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </Col>
         </Row>
+        
+      
       </Container>
     </section>
   );

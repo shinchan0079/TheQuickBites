@@ -1,5 +1,9 @@
 import React from 'react';
 
+import Navbar from '../components/common/Navbar';
+import Footer from '../components/common/Footer';
+import BottomNav from '../components/common/BottomNav';
+
 import Hero from '../components/home/Hero';
 import Categories from '../components/home/Categories';
 import OfferBanner from '../components/home/OfferBanner';
@@ -11,16 +15,21 @@ import VendorCTA from '../components/home/VendorCTA';
 
 const Home = () => {
   return (
-    <>
-      <Hero />
-      <Categories />
-      <OfferBanner />
-      <NearbyVendors />
-      <PopularFoods />
-      <WhyChooseUs />
-      <HowItWorks />
-      <VendorCTA />
-    </>
+    <div className="main-layout">
+      <Navbar />
+      <main>
+        <Hero />
+        <Categories />
+        <OfferBanner />
+        <NearbyVendors />
+        <PopularFoods />
+        <WhyChooseUs />
+        <HowItWorks />
+        <VendorCTA />
+      </main>
+      {/* <Footer /> */}
+      <BottomNav />
+    </div>
   );
 };
 

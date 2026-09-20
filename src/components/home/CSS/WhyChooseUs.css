@@ -4,6 +4,8 @@
 .why-card {
   border-radius: var(--radius-lg);
   background-color: var(--bg-offwhite);
+  max-width: 350px;
+  margin: 0 auto;
 }
 .why-icon-wrapper {
   width: 80px;

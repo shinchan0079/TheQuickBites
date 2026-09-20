@@ -7,8 +7,8 @@
 }
 
 .category-card {
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background-color: var(--bg-offwhite);
   overflow: hidden;
@@ -32,4 +32,11 @@
 
 .category-wrapper.active .category-title {
   color: var(--primary-orange);
+}
+
+@media (min-width: 768px) {
+  .category-card {
+    width: 90px;
+    height: 90px;
+  }
 }

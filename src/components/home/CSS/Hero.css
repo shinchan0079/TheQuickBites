@@ -30,7 +30,7 @@
   line-height: 1.6; font-size: 1.05rem;
 }
 .hero-search-wrapper {
-  max-width: 450px;
+  /* max-width removed to handle in JSX for the new centered row */
 }
 .hero-search-input {
   font-size: 0.95rem;
@@ -43,7 +43,7 @@
   cursor: pointer;
 }
 .hero-img-wrapper {
-  width: 100%; height: 400px;
+  width: 100%; height: 250px;
   border-radius: var(--radius-2xl); box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   overflow: hidden; border: 8px solid white;
 }
@@ -60,4 +60,10 @@
 }
 .hero-superfast-text {
   color: var(--primary-dark);
+}
+
+@media (min-width: 768px) {
+  .hero-img-wrapper {
+    height: 450px;
+  }
 }
