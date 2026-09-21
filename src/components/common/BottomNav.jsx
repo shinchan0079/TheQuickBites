@@ -9,8 +9,8 @@ const BottomNav = () => {
   
   const navItems = [
     { path: '/', icon: <FiHome />, label: 'Home' },
-    { path: '/orders', icon: <FiClipboard />, label: 'Orders' },
     { path: '/cart', icon: <FiShoppingCart />, label: 'Cart' },
+    { path: '/orders', icon: <FiClipboard />, label: 'Orders' },
     { path: '/profile', icon: <FiUser />, label: 'Profile' },
   ];
 

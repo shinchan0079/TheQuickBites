@@ -9,20 +9,26 @@
     background-color: #F9F6E7;
 }
 .heading-outer{
-    height: 20px;
+    height: 40px;
     width: 100%;
     display: flex;
+    background-color: #F9F6E7;
     align-items: center;
     font-family: "Poppins", sans-serif;
-    /* border: 1px solid; */
+    /* border: 1px solid;  */
     /* margin-top: 100px; */
+    position: sticky;
+    top: 0;
+
+
 }
+
 .category-page-outer h2 {
-    margin-top: 40px;
+    margin-top: 15px;
     margin-left: 20px;
 }
 .category-page-outer #arrow {
-   margin-top: 40px;
+   margin-top: 15px;
    margin-left: 20px;
    font-size: 20px;
 }

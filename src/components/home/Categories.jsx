@@ -56,7 +56,7 @@ const Categories = () => {
             <span className="text-sm fw-semibold text-dark">Delivering to your Address</span>
           </div>
 
-          <h1 className="fw-bold lh-sm mb-3 fs-2" style={{ color: 'var(--primary-dark)' }}>
+          {/* <h1 className="fw-bold lh-sm mb-3 fs-2" style={{ color: 'var(--primary-dark)' }}>
             Street Food, <br className="d-block d-md-none" />
             <span style={{ color: 'var(--primary-orange)' }}>अब आपके दरवाजे तक!</span>
             <span className="fs-4 fw-medium d-block mt-2" style={{ color: 'var(--primary-dark)', opacity: 0.8 }}>Right at your doorstep!</span>
@@ -64,7 +64,8 @@ const Categories = () => {
           <p className="text-muted mb-5 px-3 mx-auto" style={{ lineHeight: 1.6, fontSize: '1.05rem', maxWidth: '600px' }}>
             अपने पसंदीदा लोकल स्टॉल से ताज़ा और स्वादिष्ट खाना ऑर्डर करें।<br />
             <span className="small">Order fresh and tasty food from your favourite local stalls. Real taste, superfast delivery.</span>
-          </p>
+          </p> */}
+          
         </div>
 
         <h2 className="fw-bold mb-4 categories-section-title text-center text-md-start">What's on your mind?</h2>

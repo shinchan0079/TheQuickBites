@@ -21,8 +21,8 @@ const Home = ({ cartItems, addToCart, decreaseQuantity }) => {
         <Hero />
         <Categories />
         <OfferBanner />
-        <NearbyVendors />
         <PopularFoods cartItems={cartItems} addToCart={addToCart} decreaseQuantity={decreaseQuantity} />
+        <NearbyVendors />
         <WhyChooseUs />
         <HowItWorks />
         <VendorCTA />

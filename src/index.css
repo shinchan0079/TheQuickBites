@@ -53,7 +53,11 @@ body {
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  width: 100%;
+  width: 70%;
+}
+.text-center>.btn{
+  width: 60%;
+
 }
 .btn-primary { background-color: var(--primary-orange); color: var(--white); }
 .btn-primary:hover { background-color: #e5a700; }
@@ -89,7 +93,12 @@ body {
   padding: 0 16px;
   align-items: center; justify-content: space-between;
 }
-.main-layout { padding-bottom: 70px; padding-top: 65px; min-height: 100vh; background-color: var(--bg-offwhite); }
+.main-layout { 
+  padding-bottom: 10px; 
+  padding-top: 1px; 
+  min-height: 100vh; 
+  background-color: var(--bg-offwhite);
+ }
 
 .bottom-nav {
   position: fixed;
@@ -114,7 +123,11 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-.login-brand { display: none; }
+.login-brand {
+   display: none;
+   }
+
+
 .login-form-container {
   flex: 1; padding: 32px 24px;
   background-color: var(--primary-dark); color: var(--white);
